@@ -89,6 +89,15 @@
 
     <div class="top">  </div>
 
+    <h1 style="text-align: center; color:rgb(56, 122, 245)">Ultimate HTML cheat sheet</h1>
+    
+    <h3 style="margin: 0 auto; text-align: center; margin-top: 30px;">
+        <div style="width: 10px; height: 10px; background-color:rgb(0, 132, 255); display: inline-block;"></div>
+        This color means the main code. <br>
+        <div style="width: 10px; height: 10px; background-color:red; display: inline-block;"></div>
+        This color means relationship.
+    </h3>
+
     <table>
 
         <colgroup>
@@ -112,6 +121,54 @@
 
         <!-- Main Content -->
         <tbody>
+
+        <!-- Doctype and basic structure -->
+        <tr>
+            <td>
+                Document type: <br>
+                &lt;!DOCTYPE&gt;
+                <br> <br>
+                HTML tag:
+                &lt;html&gt;
+                <br> <br>
+                Head tag:
+                &lt;head&gt;
+                <br> <br>
+                Body tag:
+                &lt;body&gt;
+            </td>
+            <td>
+                <span class="colorRed"> &lt;<sup>1</sup>!DOCTYPE html&gt; </span> <br>
+                <span class="colorRed"> &lt;<sup>2</sup>html lang="en"&gt; <br> </span>
+                <span class="colorRed"> <sup>3</sup>&lt;head&gt; </span> ..... <br>
+                <sup style="font-weight: bold">4</sup>&lt;!--We will put meta information, title, icon etc here--&gt; <br>
+                <span class="colorRed"> &lt;/head&gt; </span>
+                <br> <br>
+                <span class="colorRed"> &lt;body&gt; </span> <br>
+                &lt;!-- We will put all the content here. --&gt; <br>
+                ................................... <br>
+                <span class="colorRed"> &lt;/body&gt; </span> <br>
+                <span class="colorRed"> &lt;/html&gt; </span>
+            </td>
+            <td>
+                ...................................
+            </td>
+
+            <td>html, boilerplate, header, gooter, body, doctype, lang</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b>&lt;!DOCTYPE&gt;</b> is not the part of our website. It is written to inform the browser about the content. so we put <b>html</b> to inform the browser that the given document is a html file.
+                <br> <br>
+                <b>2:</b> the <b>&lt;html&gt;</b> tag contains the whole website either content of the page or the meta data. It is the main container. And the <b>lang</b> attribute defines the language of the contents. It is to help search engines and browsers.
+                <br> <br>
+                <b>3:</b> The <b>&lt;head&gt;</b> tag containd all the meta information. the title of the page the favicon etc. the <b>&lt;body&gt;</b> tag contains all the elements. like headline, paragraph, images etc. there is also a tag called <b>&lt;footer&gt;</b>. It contains all the program info, copyright information, authorship information etc.
+                <br> <br>
+                <b>4:</b> <b>&lt;!-- ... --&gt;</b> this is used for commenting. A comment does not do anythin. We just put it in complex placec. So that we can understand the code later.
+            </td>
+        </tr>
+
 
         <!-- Heading tags -->
         <tr>
@@ -156,6 +213,30 @@
             </td>
 
             <td> Paragraph, text, content</td>
+        </tr>
+
+
+        <!-- Line breack -->
+        <tr>
+            <td>
+                Break tag: <br>
+                &lt;br&gt;
+            </td>
+            <td>
+                &lt;p&gt; This is a praragraph. <span class="colorRed">&lt;br&gt;</span> But the rest is Lorem ipsum dolor sit amet&lt;/p&gt;
+
+            </td>
+            <td>
+                <p> This is a praragraph.<br> But the rest is Lorem ipsum dolor sit amet</p>
+            </td>
+
+            <td> line break, br, wbr</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>*</b> &lt;br&gt; tag gives a line break. There is also a tag called <b>&lt;wbr&gt;</b>. it is used to give a possible line break if the content overflow. It is basically used for preventing unwanted line breaks.
+            </td>
         </tr>
 
 
@@ -361,19 +442,60 @@ jinishta kintu onek mojadar.
         <tr>
             <td>
                 Blockquote: <br>
-                &lt;blockquote&gt; <br>
-                It is to cite any quot from anyone.
-            </td>
-            <td>
-                HTML From Wiki: &lt;br&gt;
-                <span class="colorRed"> &lt;blockquote cite="https://en.wikipedia.org/wiki/HTML" &gt; </span> The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. <span class="colorRed"> &lt;/blockquote&gt; </span>
+                &lt;blockquote&gt;
             </td>
             <td>
                 HTML From Wiki: <br>
+                <span class="colorRed"> &lt;blockquote cite="https://en.wikipedia.org/wiki/HTML" &gt; </span> The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. <span class="colorRed"> &lt;/blockquote&gt; </span> <br>
+                &lt;!-- It is to cite any quot from anyone. --&gt;
+            </td>
+            <td>
+                HTML From Wiki:
                 <blockquote cite="https://en.wikipedia.org/wiki/HTML"> The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. </blockquote>
             </td>
 
             <td> blockquote, Quotation, quot, citation, cite </td>
+        </tr>
+
+
+
+        <!-- details tag -->
+        <tr>
+            <td>
+                Details tag: <br>
+                &lt;details&gt;
+                <br> <br>
+                Summary tag: <br>
+                &lt;summary&gt;
+
+            </td>
+            <td>
+                <span class="colorRed">
+                    &lt;details&gt; <br>
+                    <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                    &lt;summary&gt;</span><span style="font-weight: bold">Some Text</span><span class="colorRed">&lt;/summary&gt; <br>
+                    <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                    </span>&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto fuga commodi vero esse laboriosam!&lt;/p&gt; <br>
+                    <span class="colorRed">
+                    &lt;/details&gt; <br>
+                </span>
+            </td>
+            <td>
+                <details>
+                    <summary>Some Text</summary>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto fuga commodi vero esse laboriosam!
+                    </p>
+                </details>
+            </td>
+
+            <td> summary, details, read more, dropdown  </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>***</b> Click on the triangle to understand the whole thing.
+            </td>
         </tr>
 
 
@@ -382,7 +504,6 @@ jinishta kintu onek mojadar.
             <td>
                 Anchor tag: <br>
                 &lt;a&gt; <br>
-                This can be used in many different forms.
             </td>
             <td>
                 <span class="colorRed"> &lt;a href="http://google.com" <sup>1</sup>target="_blank" rel=<sup>2</sup>"noopener noreferrer" &gt; </span> Normal link <span class="colorRed"> &lt;/a&gt; </span> <br> &lt;br&gt; <br>
@@ -415,11 +536,45 @@ jinishta kintu onek mojadar.
         </tr>
 
 
+        
+        <!-- details tag -->
+        <tr>
+            <td>
+                Base tag: <br>
+                &lt;base&gt;
+
+            </td>
+            <td>
+                &lt;head&gt; <br> <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                <span class="colorRed">
+                    &lt;<sup>1</sup>base href="<span style="font-weight: normal; color: red;">https://www.freepik.com/</span>"
+                    <span style="font-weight: normal; color: black;">target="_blank"</span> &gt;<br>
+                </span>
+                &lt;/head&gt; 
+                <br> <br>
+                &lt;body&gt; <br>
+                    &lt;a href="<span style="color: red">author/rmrayhan5858</span>"&gt;Click Here&lt;/a&gt; <br>
+                &lt;/body&gt; <br>
+            </td>
+            <td>
+                <a href="https://www.freepik.com/author/rmrayhan5858" target="_blank" title="https://www.freepik.com/author/rmrayhan5858">Click Here</a>
+            </td>
+
+            <td> base, joining links </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> The <b>&lt;base&gt;</b> tag basically works as a default URL and a default target for all links on a page. When we use an &lt;a&gt; tag in the body and if we give a portion the url then the browser adds the portion with the base then send to the link. It is super helpful in file control.
+            </td>
+        </tr>
+
+
         <!-- list -->
         <tr>
             <td>
                 Ordered list: <br>
-                &lt;ol&gt; <br>
+                &lt;ol&gt; <br> <br>
                 Unordered list: <br>
                 &lt;ul&gt; <br>
             </td>
@@ -547,6 +702,33 @@ jinishta kintu onek mojadar.
         </tr>
 
 
+        
+        <!-- horizontal line -->
+        <tr>
+            <td>
+                Horizontal line: <br>
+                &lt;hr&gt;
+                
+            </td>
+            <td>
+                &lt;h1&gt;Headline&lt;/h1&gt; <br>
+                <span class="colorRed">
+                    &lt;hr&gt;
+                </span>
+                <br>
+                &lt;p&gt; Lorem ipsum dolor sit amet. &lt;/p&gt;
+            </td>
+            <td>
+                <h1 style="margin: 0;">Headline</h1>
+                <hr>
+                <p style="margin: 0"> Lorem ipsum dolor sit amet. </p>
+            </td>
+            
+            <td> Horizontal line, hr </td>
+        </tr>
+
+
+
         <!-- image tag -->
         <tr>
             <td>
@@ -554,12 +736,12 @@ jinishta kintu onek mojadar.
                 &lt;img&gt; <br>
             </td>
             <td>
-                <span class="colorRed"> &lt;img src="image.png" alt="Nice Image" &gt; </span> <br>
+                <span class="colorRed"> &lt;img src="<span style="color: black; font-weight: normal;">Image.png</span>" alt="<span style="color: black; font-weight: normal;">Nice Image</span>" &gt; </span> <br>
                 &lt;!-- <b><q>alt</q></b> attribute is applied when the image source is not found or corrupted. --&gt;
             </td>
             <td>
                 <div style="width: 100%; height: 150px; overflow: hidden;">
-                    <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&w=600" alt="NiceImage" style="position: relative; top: -73px;">
+                    <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=600" alt="NiceImage" style="position: relative; top: -73px;">
                 </div>
                 <!-- <div style="width: 100%; height: 100px; font-size: 20px; background-color: rgb(20, 187, 187); color: rgb(65, 237, 243); display: flex; align-items: center; justify-content: center;"><b>This is a Nice Image</b></div> -->
             </td>
@@ -609,9 +791,9 @@ jinishta kintu onek mojadar.
             </td>
             <td>
                 <span class="colorRed"> &lt;picture&gt; </span> <br>
-                    <span class="colorRed"> &lt;source <sup>1</sup>media="(min-width: 1200px)" <sup>2</sup>srcset="source1"&gt; </span> <br>
-                    <span class="colorRed"> &lt;source media="(min-width: 800px)" srcset="source2"&gt; </span> <br>
-                    <span class="colorRed"> &lt;img src="default source" alt="Nice Image"&gt; </span> <br>
+                    <span class="colorRed"> &lt;source <sup>1</sup>media="(min-width: <span style="color: black; font-weight: normal;">1200px</span>)" <sup>2</sup>srcset="<span style="color: black; font-weight: normal;">source1</span>"&gt; </span> <br>
+                    <span class="colorRed"> &lt;source media="(min-width: <span style="color: black; font-weight: normal;">800px</span>)" srcset="<span style="color: black; font-weight: normal;">source2</span>"&gt; </span> <br>
+                    <span class="colorRed"> &lt;img src="<span style="color: black; font-weight: normal;">default source</span>" alt="<span style="color: black; font-weight: normal;">Nice Image</span>"&gt; </span> <br>
                 <span class="colorRed"> &lt;/picture&gt; </span>
             </td>
             <td>
@@ -650,36 +832,36 @@ jinishta kintu onek mojadar.
                 &lt;area&gt; <br>
             </td>
             <td>
-                &lt;img src="image source" alt="Nice Image" <span class="colorRed"> <sup>1</sup>usemap="#imageMap" </span> &gt; <br> <br>
+                &lt;img src="image source" alt="Nice Image" <span class="colorRed"> <sup>1</sup>usemap="#<span style="color: red; font-weight: normal;">imageMap</span>" </span> &gt; <br> <br>
                 
                 <b>
                 &lt;!-- Click on the white shapes to see the magic of the map and the area tag. --&gt;
                 </b>
 
                 <br> <br> <br>
-                <span class="colorRed"><sup>2</sup>&lt;map name="imageMap"&gt; </span> <br> 
+                <span class="colorRed"><sup>2</sup>&lt;map name="<span style="color: red; font-weight: normal;">imageMap</span>"&gt; </span> <br> 
                     <br>
                     <span class="colorRed"><sup>3</sup>&lt;area shape="rect"
                     <br>
-                    coords="50, 80, 218, 250"
+                    coords="<span style="color: black; font-weight: normal;">50, 80, 218, 250</span>"
                     <br>
-                    href="javascript:alert('...')"
+                    href="<span style="color: black; font-weight: normal;">javascript:alert('...')</span>"
                     &gt;
                     
                     <br> <br>
                     &lt;area shape="circle"
                     <br>
-                    coords="296, 355, 63"
+                    coords="<span style="color: black; font-weight: normal;">296, 355, 63</span>"
                     <br>
-                    href="javascript:alert('...')"
+                    href="<span style="color: black; font-weight: normal;">javascript:alert('...')</span>"
                     &gt;
                     
                     <br> <br>
                     &lt;area shape="poly"
                     <br>
-                    coords="100, 330, 210, 450, 80, 545, 90, 340"
+                    coords="<span style="color: black; font-weight: normal;">100, 330, 210, 450, 80, 545, 90, 340</span>"
                     <br>
-                    href="javascript:alert('...')"
+                    href="<span style="color: black; font-weight: normal;">javascript:alert('...')</span>"
                     &gt;
 
                     </span> <br> <br>
@@ -794,14 +976,14 @@ jinishta kintu onek mojadar.
             <td>
                 <span class="colorRed">
                     &lt;audio <sup>1</sup>controls&gt; <br>
-                    &lt;source src="audio source"&gt; <br>
+                    &lt;source src=</span>"Audio source"<span class="colorRed">&gt; <br>
                     &lt;/audio&gt;
                 </span> <br>
                 &lt;!-- There can be multiple sources. --&gt;
                 <br> <br>
                 <span class="colorRed">
                     &lt;video controls autoplay&gt; <br>
-                    &lt;source src="audio source"&gt; <br>
+                    &lt;source src=</span>"Video source"<span class="colorRed">&gt; <br>
                     &lt;/video&gt; <br>
                 </span>
             </td>
@@ -838,7 +1020,7 @@ jinishta kintu onek mojadar.
             </td>
             <td>
                 <span class="colorRed">
-                    &lt; iframe src="webpage source" frameborder="1"&gt; 
+                    &lt; iframe src="<span style="color: black; font-weight: normal;">webpage source</span>" frameborder="1"&gt; 
                     &lt;/iframe&gt; <br>
                 </span>
                 &lt;!-- <b>iframe</b> is used to show other webpages within our web pages. and the <b>src</b> (source) is the link of the page --&gt; <br>
@@ -901,8 +1083,8 @@ jinishta kintu onek mojadar.
             </td>
             <td>
                 &lt;form&gt; <br> <br>
-                <span class="colorRed"> &lt; <sup>1</sup>label <sup>*</sup>for="inputText"&gt;Enter Name: &lt;/label&gt;</span> <br>
-                <span class="colorRed"> &lt;input <sup>2</sup>type="text" <sup>3</sup>name="inputText" <sup>*</sup>id="inputText" <sup>4</sup>required&gt; </span> 
+                <span class="colorRed"> &lt; <sup>1</sup>label <sup>*</sup>for="<span style="color: red; font-weight: normal;">inputText</span>"&gt;</span>Enter Name: <span class="colorRed">&lt;/label&gt;</span> <br>
+                <span class="colorRed"> &lt;input <sup>2</sup>type="text" <sup>3</sup>name="<span style="color: black; font-weight: normal;">inputText</span>" <sup>*</sup>id="<span style="color: red; font-weight: normal;">inputText</span>" <sup>4</sup>required&gt; </span> 
                 <br>&lt;br&gt; <br>
                 <span class="colorRed"> &lt;input type="submit"&gt; </span> 
                 <br> <br>
@@ -1032,8 +1214,8 @@ jinishta kintu onek mojadar.
             </td>
             <td>
                 &lt;form&gt; <br>
-                &lt;label for="txtarea"&gt;Leave a commnet: &lt;/label&gt; &lt;br&gt; <br>
-                <span class="colorRed">&lt;textarea id="txtarea" rows="4" cols="50"&gt; </span> 
+                &lt;label for="<span style="color: red; font-weight: normal;">txtarea</span>"&gt;Leave a commnet: &lt;/label&gt; &lt;br&gt; <br>
+                <span class="colorRed">&lt;textarea id="<span style="color: red; font-weight: normal;">txtarea</span>" rows="<span style="color: black; font-weight: normal;">4</span>" cols="<span style="color: black; font-weight: normal;">50</span>"&gt; </span> 
                 <br> This Cheat sheet is really helpfull <br>
                 <span class="colorRed">&lt;/textarea&gt; </span> 
                 <br>
@@ -1108,7 +1290,7 @@ jinishta kintu onek mojadar.
             <td>
                 <span class="colorRed">
                     &lt;button <sup>1</sup>onclick="handlebtn()"&gt; <br>
-                    Click me <br>
+                    </span>Click me<span class="colorRed"> <br>
                     &lt;/button&gt;
                 </span>
             </td>
@@ -1148,17 +1330,17 @@ jinishta kintu onek mojadar.
                 &lt;!-- Click on the Select option. --&gt; <br>
                 <span class="colorRed">
                     &lt; <sup>1</sup>select&gt; <br>
-                        &lt; <sup>2</sup>optgroup label="Top 2"&gt; <br>
+                        &lt; <sup>2</sup>optgroup label="</span>Top 2<span class="colorRed">"&gt; <br>
                             <p style="width: 20px; display:inline-block; margin: 0;"> </p>
-                            &lt; <sup>3</sup>option <sup>4</sup>value="1"&gt;First&lt;/option&gt; <br>
+                            &lt; <sup>3</sup>option <sup>4</sup>value="</span>1<span class="colorRed">"&gt;</span>First<span class="colorRed">&lt;/option&gt; <br>
                             <p style="width: 20px; display:inline-block; margin: 0;"> </p>
-                            &lt;option value="2"&gt;Second&lt;/option&gt; <br>
+                            &lt;option value="</span>2<span class="colorRed">"&gt;</span>Second<span class="colorRed">&lt;/option&gt; <br>
                         &lt;/optgroup&gt; <br> <br>
-                        &lt;optgroup label="Others"&gt; <br>
+                        &lt;optgroup label="</span>Others<span class="colorRed">"&gt; <br>
                             <p style="width: 20px; display:inline-block; margin: 0;"> </p>
-                            &lt;option value="3"&gt;Third&lt;/option&gt; <br>
+                            &lt;option value="</span>3<span class="colorRed">"&gt;</span>Third<span class="colorRed">&lt;/option&gt; <br>
                             <p style="width: 20px; display:inline-block; margin: 0;"> </p>
-                            &lt;option value="4"&gt;Fourth&lt;/option&gt; <br>
+                            &lt;option value="</span>4<span class="colorRed">"&gt;</span>Fourth<span class="colorRed">&lt;/option&gt; <br>
                         &lt;/optgroup&gt; <br> <br>
                     &lt;/select&gt;
                 </span>
@@ -1203,10 +1385,10 @@ jinishta kintu onek mojadar.
             </td>
             <td>
                 <span class="colorRed">
-                    &lt;input <sup>1</sup>list="opinion"&gt; <br>
-                    &lt;datalist id="opinion"&gt; <br>
-                    &lt;option value=" <span style="color: black;">This is awesome"</span>&gt; <br>
-                    &lt;option value= <span style="color: black;">"This is super awesome"</span>&gt; <br>
+                    &lt;input <sup>1</sup>list=<span style="color: red; font-weight: normal;">"opinion"</span>&gt; <br>
+                    &lt;datalist id=<span style="color: red; font-weight: normal;">"opinion"</span>&gt; <br>
+                    &lt;option value=</span>"This is awesome" <span class="colorRed">&gt; <br>
+                    &lt;option value=</span>"This is super awesome"<span class="colorRed">&gt; <br>
                     &lt;/datalist&gt; <br>
                 </span>
             </td>
@@ -1229,8 +1411,299 @@ jinishta kintu onek mojadar.
 
 
 
+        <!-- meter ans progress -->
+        <tr>
+            <td>
+                Meter: <br>
+                &lt;meter&gt;
+                <br> <br>
+                Progress: <br>
+                &lt;progress&gt;
+                
+            </td>
+            <td>
+                &lt;label for="html"&gt;Html&lt;/label&gt; <br>
+                <span class="colorRed">
+                    &lt;meter id="html" value="10" min="0" max="100"&gt;
+                </span>
+                ...
+                <span class="colorRed"> &lt;/meter&gt; </span>
+                <br>
+                &lt;label for="css"&gt;Css&lt;/label&gt; <br>
+                <span class="colorRed">
+                    &lt;progress id="css" value="32" max="100"&gt;
+                </span>
+                ...
+                <span class="colorRed"> &lt;/progress&gt; </span>
+                <br>
+            </td>
+            <td>
+                <label for="html">Html:</label>
+                <meter id="html" value="100" min="0" max="100"> HTML </meter> <br> <br>
+                <label for="css">Css:</label>
+                <progress id="css" value="70" max="100"> Css </progress>
+            </td>
+            
+            <td> meter, bar, progress, downloading, processing </td>
+        </tr>
 
 
+
+
+        <!-- Section Divission Span tag -->
+        <tr>
+            <td>
+                Section tag: <br>
+                &lt;section&gt;
+                <br> <br>
+                Division tag: <br>
+                &lt;div&gt;
+                <br> <br>
+                Span tag: <br>
+                &lt;span&gt;
+
+            </td>
+            <td>
+                <span class="colorRed">
+                    &lt;<sup>1</sup>section&gt; <br>
+                    <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                    &lt;<sup>2</sup>div&gt; <br>
+                    <p style="width: 20px; display:inline-block; margin: 0;"> </p><p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                    </span> &lt;p&gt; Lorem ipsum dolor sit amet consectetur, <span class="colorRed">&lt;<sup>3</sup>span style="color: blue"&gt; This is inside span.&lt;/span&gt;</span> adipisicing elit. Consequatur non quam, sed sint quaerat tempore.&lt;/p&gt; <br>
+                    <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                    <span class="colorRed">
+                    &lt;/div&gt; <br>
+                    &lt;/section&gt; <br>
+                </span>
+            </td>
+            <td>
+                <section>
+                    <div>
+                     <p> Lorem ipsum dolor sit amet consectetur, <span style="color: blue;"> This is inside span.</span> adipisicing elit. Consequatur non quam, sed sint quaerat tempore.</p>
+                    </div>
+                </section>
+            </td>
+
+            <td> Section, Division, div, span, grouping, article,  </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>&lt;section&gt;</q></b> tag defines a section. It is like a container.
+                <br> <br>
+                <b>2:</b> <b><q>&lt;div&gt;</q></b> tag defines a division. It is also like a container. and it creates a block. Any sort of content can be put inside the &lt;div&gt; tag.
+                <br> <br>
+                <b>3:</b> <b><q>&lt;span&gt;</q></b> tag is like &lt;div&gt; tag. but it doesn't create a block. we can use it as inline. We actually use it to change a small portion of some element. <b>&lt;section&gt; &lt;div&gt; &lt;span&gt; are basically used to create and maintain the layout of the page. </b>
+                <br> <br>
+                <b>-->></b> There are some element that is similar to &lt;div&gt; or &lt;section&gt; tag. Like <b>&lt;main&gt;</b> tag. It is used to contain the main contents of a webpage. There can not be multiple &lt;main&gt; tag in one page.
+                <br> There is <b>&lt;article&gt;</b> tag to show articles. It is useful for blog post or news story. There is 
+                <b>&lt;aside&gt;</b> tag to show a side-note or something that is not entirely related to the topic. there is also a tag called &lt;dialog&gt; to show dialog box.
+            </td>
+        </tr>
+
+        
+
+
+        
+        <!-- Meta information -->
+        <tr>
+            <td>
+                Meta tag: <br>
+                &lt;meta&gt;
+                
+            </td>
+            <td>
+                &lt;head&gt; <br> <br>
+                <span class="colorRed">
+                    &lt;<sup>1</sup>meta <sup>2</sup>name="description" <sup>3</sup>content="<span style="color: black; font-weight: normal">HTML CHEAT SHEET</span>"&gt; <br> <br>
+                    &lt;meta name="keywords"content="<span style="color: black; font-weight: normal">HTML,CSS,JavaScript</span>"&gt; <br> <br>
+                    &lt;meta name="author" content="<span style="color: black; font-weight: normal">Mahadi Razib</span>"&gt; <br> <br>
+                    &lt;meta name="<sup>4</sup>viewport" content="width=device-width, initial-scale=1.0"&gt;
+                </span> <br> <br>
+                &lt;/head&gt;
+            </td>
+            <td style="text-align: center">
+                <b><p style="color: blue">&lt;meta&gt; tag does not show anything in the webpage.</p></b> 
+            </td>
+            
+            <td> meta information, description of webpage, keywords, author, viewport </td>
+        </tr>
+        
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b>Metadata is data (information) about data.</b> it doesn't show anything in the browser. It helps the browser to work properly and give search engines the information about the webpage.
+                <br> <br>
+                <b>2:</b> <b><q>name</q></b> attribute specifies the name for the metadata. Based on the name we can say what data is for who. like the name=<b><q>description</q></b> or name=<b><q>keywords</q></b>. This keywords and description is not for browser. It is for search engines. There is also an attribute for &lt;meta&gt; tag called <b><q>http-equiv</q></b>. If we set the value of http-equiv than we can not set the value of name.
+                <br> <br>
+                <b>3:</b> <b><q>content</q></b> attribute gives the value associated with the http-equiv or name attribute.
+                <br> <br>
+                <b>4:</b> name=<b><q>viewport</q></b> gives the browser instructions on how to control the page's dimensions and scaling. It basically controls the viewport (the user's visible area of a web page).
+                
+            </td>
+        </tr>
+        
+
+
+        <!-- Title tag -->
+        <tr>
+            <td>
+                Title tag: <br>
+                &lt;title&gt;
+            </td>
+            <td>
+                &lt;head&gt; <br> 
+                <span class="colorRed">
+                    <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                    &lt;title&gt; <span style="font-weight: normal; color: black">Your title here.</span> &lt;title&gt;
+                </span> <br> 
+                &lt;/head&gt;
+
+            </td>
+            <td style="text-align: center">
+                <b><p style="color: blue">&lt;title&gt; tag does not show anything in the webpage.</p></b> 
+            </td>
+
+            <td> title, page title </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>*** &lt;title&gt; tag is mainly used to show the title of the page ***</b> Think of the below image as a browser. The browser tab will show title. <br>
+
+                <div style="width: 200px; display: inline-block; flex: 1; padding: 5px; background-color: rgb(221, 230, 250);">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px" viewBox="0 0 71 20" overflow="visible" xml:space="preserve">
+                    <path fill="#387AF5" d="M25,8H0V1.2C0,0.6,0.6,0,1.2,0h22.5C24.4,0,25,0.6,25,1.2V8z"/>
+                    <g>
+                        <path fill="#BCBEC1" d="M25.1,7.9v-6c0-0.6,0.5-1.1,1.1-1.1h10c0.6,0,1.1,0.5,1.1,1.1v6H25.1z"/>
+                        <g>
+                            <path fill="#8C8F93" d="M36.2,0.9c0.6,0,1,0.4,1,1v5.9h-12V1.9c0-0.6,0.4-1,1-1H36.2 M36.2,0.6h-10c-0.7,0-1.2,0.6-1.2,1.2V8h12.5
+                                V1.9C37.5,1.2,36.9,0.6,36.2,0.6L36.2,0.6z"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#BCBEC1" d="M37.6,7.9v-6c0-0.6,0.5-1.1,1.1-1.1h10c0.6,0,1.1,0.5,1.1,1.1v6H37.6z"/>
+                        <g>
+                            <path fill="#8C8F93" d="M48.8,0.9c0.6,0,1,0.4,1,1v5.9h-12V1.9c0-0.6,0.4-1,1-1H48.8 M48.8,0.6h-10c-0.7,0-1.2,0.6-1.2,1.2V8H50
+                                V1.9C50,1.2,49.4,0.6,48.8,0.6L48.8,0.6z"/>
+                        </g>
+                    </g>
+                    <text transform="matrix(1 0 0 1 1.8496 6.1797)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="4.9942px">Title.....</text>
+                    <text transform="matrix(1 0 0 1 3 14.9365)" font-family="'MyriadPro-Regular'" font-size="5.4541px">Rest of the content</text>
+                    <line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="65" y1="2.1" x2="68.5" y2="5.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="68.5" y1="2.1" x2="65" y2="5.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="52.2" y1="3.8" x2="56.2" y2="3.8"/>
+                    <rect x="58.5" y="2.3" fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="3" height="3"/>
+                    </svg>
+                </div>
+
+            </td>
+        </tr>
+
+
+        <!-- link tag -->
+        <tr>
+            <td>
+                Link tag: <br>
+                &lt;link&gt;
+
+            </td>
+            <td>
+                &lt;head&gt; <br> 
+                <span class="colorRed">
+                    <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                    &lt;link <sup>1</sup>rel="stylesheet" href="<sup>2</sup>style.css"&gt;
+                </span> <br> 
+                &lt;/head&gt;
+
+            </td>
+            <td style="text-align: center">
+                <b><p style="color: blue">&lt;link&gt; tag does not show anything in the webpage.</p></b> 
+            </td>
+
+            <td> link, favicon, fav icon, style, css </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>rel</q></b> attribute defines the relationship between the current document and an external resource.
+                <br> <br>
+                <b>2:</b> we put the url of the external resource in the <b><q>href</q></b> attribute.
+                <br> <br>
+                <b>*** &lt;link&gt; tag is mainly used for external css file and favicon of the webpage. ***</b>
+            </td>
+        </tr>
+
+    
+
+        <!-- Style tag -->
+        <tr>
+            <td>
+                Style tag: <br>
+                &lt;style&gt;
+
+            </td>
+            <td>
+                &lt;div class="<span style="color: red;">container</span>"&gt; ... &lt;/div&gt; <br> <br>
+                <span class="colorRed">
+                    &lt;style&gt; <br> </span>
+                    <span style="color: red;">.container</span> { <br>
+                        <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                        width: 80%; <br>
+                        <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                        height: 100px; <br>
+                        <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                        background-color: 10px solid rgb(0, 132, 255); <br>
+                    } <br>
+                    <span class="colorRed">
+                    &lt;/style&gt; <br>
+                </span>
+            </td>
+            <td style="text-align: center">
+                <div style="border: 10px solid rgb(0, 132, 255); width: 80%; height: 100px; margin: 0 auto;"></div>
+            </td>
+
+            <td> style, css </td>
+        </tr>
+        
+        
+        
+        <!-- JavaScript -->
+        <tr>
+            <td>
+                script tag: <br>
+                &lt;script&gt;
+                
+            </td>
+            <td>
+                &lt;button onclick="scriptCheck()"&gt; Click me &lt;/button&gt; <br> <br>
+                <span class="colorRed">
+                    &lt;script&gt; <br>
+                </span>
+                function scriptCheck(){ <br>
+                    alert("This behaviour is from JavaScript"); <br>
+                }
+                <br>
+                <span class="colorRed">
+                    &lt;/script&gt; 
+                </span>
+            </td>
+            <td style="text-align: center">
+
+                <button onclick="scriptCheck()"> Click me </button>
+
+                <script>
+                function scriptCheck(){
+                alert("This behaviour is from JavaScript");
+                }
+                </script>
+
+            </td>
+
+            <td> javascript, script, function, programming </td>
+        </tr>
 
 
 
