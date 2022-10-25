@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+
+
+    <style>
+
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        table, td, th {
+            border: 1px solid;
+            border-color: rgb(56, 122, 245);
+        }
+
+        table{
+            width: 90%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .top{
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            z-index: 20;
+        }
+
+        .tableHead {
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            font-size: 30px;
+            font-family: 'Roboto Slab', serif;
+            color: white;
+            text-shadow: 0 2px 3px rgb(145, 212, 243);
+            background-color: rgb(56, 122, 245);
+            z-index: 40;
+        }
+
+        td, th {
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .colorRed{
+            color: rgb(0, 132, 255);
+            font-weight: bold;
+        }
+
+        code, pre{
+            font-family: monospace;
+            font-size: large;
+            margin: 0;
+        }
+
+        sup{
+            color: black;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        fieldset{
+            border: 1px solid rgb(56, 122, 245);
+            width: fit-content;
+            display: inline-block;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="top">  </div>
+
+    <table>
+
+        <colgroup>
+            <col span="1" style="width: 8%;">
+            <col span="1" style="width: 42%;">
+            <col span="1" style="width: 42%;">
+            <col span="1" style="width: 8%;">
+         </colgroup>
+
+        <thead>
+
+            <tr>
+                <!-- Table Headers -->
+                <th class="tableHead"> Tags </th>
+                <th class="tableHead"> Use in Markup </th>
+                <th class="tableHead"> View in Browser </th>
+                <th class="tableHead"> Search </th>
+            </tr>
+
+        </thead>
+
+        <!-- Main Content -->
+        <tbody>
+
+        <!-- Heading tags -->
+        <tr>
+            <td>
+                Heading tags: <br>
+                
+                &lt;h1&gt; to &lt;h6&gt;
+            </td>
+            <td>
+                <span class="colorRed"> &lt;h1&gt; </span> Heading 1 <span class="colorRed"> &lt;/h1&gt; </span> <br>
+                <span class="colorRed"> &lt;h2&gt; </span> Heading 2 <span class="colorRed"> &lt;/h2&gt; </span> <br>
+                ................................... <br>
+                ................................... <br>
+                <span class="colorRed"> &lt;h6&gt; </span> Heading 6 <span class="colorRed"> &lt;/h6&gt; </span> 
+            </td>
+            <td>
+                <h1> Heading 1</h1>
+                <h2> Heading 2</h2>
+                <br>
+                ...................................
+                <br>
+                ...................................
+                <h6> Heading 6</h6>
+            </td>
+
+            <td> Heading, title</td>
+        </tr>
+
+
+        <!-- Paragraph -->
+        <tr>
+            <td>
+                Paragraph tag: <br>
+                &lt;p&gt;
+            </td>
+            <td>
+                <span class="colorRed"> &lt;p&gt; </span> This is a praragraph but the rest is Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, beatae? <span class="colorRed"> &lt;/p&gt; </span> <br>
+
+            </td>
+            <td>
+                <p> This is a praragraph but the rest is Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, beatae?</p>
+            </td>
+
+            <td> Paragraph, text, content</td>
+        </tr>
+
+
+        <!-- code tag -->
+        <tr>
+            <td>
+                Code tag: <br>
+                &lt;code&gt;
+            </td>
+            <td>
+                <span class="colorRed"> &lt;code&gt; </span> <br> for(let i=0; i&lt;10; i++) &lt;br&gt; <br> console.log("I am cool man") <br> <span class="colorRed"> &lt;/code&gt; </span> <br>
+            </td>
+            <td>
+                <code>
+                    for(let i=0; i&lt;10; i++) <br> console.log("I am cool man")
+                </code>
+            </td>
+
+            <td> code, coding, program</td>
+        </tr>
+
+
+        <!-- pre tag -->
+        <tr>
+            <td>
+                Pre tag: <br>
+                &lt;pre&gt;
+            </td>
+            <td>
+                
+<span class="colorRed">
+&lt;pre&gt; 
+</span>
+<pre>
+    Amar nam Shuvo. Ami ekhon ekta
+paragraph lekhtesi.       jeita pre
+        tag er moddhe
+jinishta kintu onek mojadar.
+</pre>
+<span class="colorRed">
+&lt;/pre&gt; 
+</span>
+                
+            </td>
+            <td>
+<pre>
+    Amar nam Shuvo. Ami ekhon ekta
+paragraph lekhtesi.       jeita pre
+        tag er moddhe
+jinishta kintu onek mojadar.
+
+</pre>
+            </td>
+
+            <td> pre, formatting</td>
+        </tr>
+        
+
+        <!-- del tag -->
+        <tr>
+            <td>
+                Delete tag: <br>
+                &lt;del&gt; <br>
+                Strikethrough: <br>
+                &lt;s&gt;
+            </td>
+            <td>
+                Something is <span class="colorRed"> &lt;del&gt; </span> Deleted <span class="colorRed"> &lt;/del&gt; </span> Present. <br> &lt;br&gt; <br>
+                Something is <span class="colorRed"> &lt;s&gt; </span> wrong <span class="colorRed"> &lt;/s&gt; </span> right.
+            </td>
+            <td>
+                Something is <del> Deleted</del> Present. <br>
+                Something is <s>wrong</s> right.
+            </td>
+
+            <td> delet, delete, line through, cross</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                There is also a tag called insertion/ins tag <b>&lt;ins&gt;</b>. It shows an underline and means insertion. The below text is in &lt;ins&gt; tag. <br>
+                &lt;ins&gt;<ins>Inserted</ins>&lt;/ins&gt;
+            </td>
+        </tr>
+
+
+        <!-- mark tag  -->
+        <tr>
+            <td>
+                Mark tag: <br>
+                &lt;mark&gt;
+            </td>
+            <td>
+                Something is <span class="colorRed"> &lt;mark&gt; </span> VERY IMPORTANT <span class="colorRed"> &lt;/mark&gt; </span> <br>
+            </td>
+            <td>
+                Something is <mark> VERY IMPORTANT </mark>
+            </td>
+
+            <td> mark word, highlight</td>
+        </tr>
+
+        <!-- other styling tag that we don't use -->
+        <tr>
+            <td>
+                Italic, Bold, Emphasis, Strong, Underline, Quotation
+            </td>
+            <td>
+                <span class="colorRed"> &lt;i&gt; </span> Italic <span class="colorRed"> &lt;/i&gt; </span> <br>
+                <span class="colorRed"> &lt;b&gt; </span> Bold <span class="colorRed"> &lt;/b&gt; </span> <br>
+                <span class="colorRed"> &lt;em&gt; </span> Emphasis <span class="colorRed"> &lt;/em&gt; </span> <br>
+                <span class="colorRed"> &lt;strong&gt; </span> Strong <span class="colorRed"> &lt;/strong&gt; </span> <br>
+                <span class="colorRed"> &lt;u&gt; </span> Underline <span class="colorRed"> &lt;/u&gt; </span> <br>
+                <span class="colorRed"> &lt;q&gt; </span> Quotation <span class="colorRed"> &lt;/q&gt; </span> <br>
+            </td>
+            <td>
+                <i> Italic </i> <br>
+                <b> Bold </b> <br>
+                <em> Emphasis </em> <br>
+                <strong> Strong </strong> <br>
+                <u> Underline </u> <br>
+                <q> Quotation </q>
+            </td>
+
+            <td> Italic, Bold, Emphasis, Strong, Underline, Quotation</td>
+        </tr>
+
+
+        <!-- abbr tag -->
+        <tr>
+            <td>
+                Abbreviation tag: <br>
+                &lt;abbr&gt;
+            </td>
+            <td>
+                I love 
+                <span class="colorRed"> &lt;abbr <sup>1</sup>title="Hypertext Markup Language"&gt; </span> HTML <span class="colorRed"> &lt;/abbr&gt; </span> and
+                <span class="colorRed"> &lt;abbr title="Cascading Style Sheets"&gt; </span> CSS <span class="colorRed"> &lt;/abbr&gt; </span>.
+            </td>
+            <td>
+                I love <abbr title="Hypertext Markup Language"> HTML </abbr> and <abbr title="Cascading Style Sheets"> CSS </abbr>.
+            </td>
+
+            <td> abbr, mouse hover, tooltip, abbreviation </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>title</q></b> shows an dotted underline. But the real perpose can be seen when we hover over the underlined text.
+            </td>
+        </tr>
+
+
+        <!-- Address tag -->
+        <tr>
+            <td>
+                Address tag: <br>
+                &lt;address&gt;
+            </td>
+            <td>
+                Address of the owner is:
+                <span class="colorRed"> &lt;address&gt; </span> &lt;br&gt;
+                <br> Name: someone &lt;br&gt; <br> Website: something.com.bd &lt;br&gt; <br> Address: Road 5, Someplace, Some Country 
+                <span class="colorRed"> &lt;/address&gt; </span>
+            </td>
+            <td>
+                Address of the owner is:
+                <address>
+                    Name: someone <br> Website: something.com.bd <br> Address: Road 5, Someplace, Some Country 
+                </address>
+            </td>
+
+            <td> address, blog article, owner info </td>
+        </tr>
+
+
+        <!-- super and sub script -->
+        <tr>
+            <td>
+                Super script: <br>
+                &lt;sup&gt; <br>
+                Sub script: <br>
+                &lt;sub&gt;
+            </td>
+            <td>
+                (a+b)
+                <span class="colorRed"> &lt;sup&gt; </span> 2 <span class="colorRed"> &lt;/sup&gt; </span> =
+                a <span class="colorRed"> &lt;sup&gt; </span> 2 <span class="colorRed"> &lt;/sup&gt; </span> + 2ab + b <span class="colorRed"> &lt;sup&gt; </span> 2 <span class="colorRed"> &lt;/sup&gt; </span>
+                &lt;br&gt; <br>
+                log<span class="colorRed"> &lt;sub&gt; </span> 2 <span class="colorRed"> &lt;/sub&gt; </span> 2 = 1 &lt;br&gt; <br> 
+                Symbol of Water: H<span class="colorRed"> &lt;sub&gt; </span>2<span class="colorRed"> &lt;/sub&gt; </span>O 
+            </td>
+            <td>
+                (a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup> <br>
+                log <sub>2</sub> 2 = 1 <br>
+                Symbol of Water: H<sub>2</sub>O
+            </td>
+
+            <td> super sub script, log, math format, chemistry  </td>
+        </tr>
+
+
+        <!-- blockquote tag -->
+        <tr>
+            <td>
+                Blockquote: <br>
+                &lt;blockquote&gt; <br>
+                It is to cite any quot from anyone.
+            </td>
+            <td>
+                HTML From Wiki: &lt;br&gt;
+                <span class="colorRed"> &lt;blockquote cite="https://en.wikipedia.org/wiki/HTML" &gt; </span> The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. <span class="colorRed"> &lt;/blockquote&gt; </span>
+            </td>
+            <td>
+                HTML From Wiki: <br>
+                <blockquote cite="https://en.wikipedia.org/wiki/HTML"> The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. </blockquote>
+            </td>
+
+            <td> blockquote, Quotation, quot, citation, cite </td>
+        </tr>
+
+
+        <!-- link/ anchor tag  -->
+        <tr>
+            <td>
+                Anchor tag: <br>
+                &lt;a&gt; <br>
+                This can be used in many different forms.
+            </td>
+            <td>
+                <span class="colorRed"> &lt;a href="http://google.com" <sup>1</sup>target="_blank" rel=<sup>2</sup>"noopener noreferrer" &gt; </span> Normal link <span class="colorRed"> &lt;/a&gt; </span> <br> &lt;br&gt; <br>
+                <span class="colorRed"> &lt;a href="javascript:alert('You are a stupid');" &gt; </span> Executing javascript <span class="colorRed"> &lt;/a&gt; </span> <br> &lt;br&gt; <br>
+                <span class="colorRed"> &lt;a href=" <sup>3</sup>mailto:mahadirzb@gmail.com" &gt; </span> Mail Link <span class="colorRed"> &lt;/a&gt; </span> <br> &lt;br&gt; <br>
+                <span class="colorRed"> &lt;a href="tel:+8801839398137" &gt; </span> Call Link <span class="colorRed"> &lt;/a&gt; </span> <br> &lt;br&gt; <br>
+                <span class="colorRed"> &lt;a href=" <sup>4</sup>appName:number or username?text/message='...'" &gt; </span> Open Apps like telegram or whatsApp <span class="colorRed"> &lt;/a&gt; </span>
+            </td>
+            <td>
+                <a href="http://google.com" target="_blank" rel="noopener noreferrer"> Normal link </a> <br> <br>
+                <a href="javascript:alert('You are a stupid');"> Executing javascript </a> <br> <br>
+                <a href="mailto:mahadirzb@gmail.com"> Mail Link </a> <br> <br>
+                <a href="tel:+8801839398137"> Call Link </a> <br> <br>
+                <a href="appName:number or username?text/message='...'"> Open Apps like telegram or whatsApp </a>
+            </td>
+
+            <td> link, anchor, new tab, telegram, whatsapp, mail, executing javascript </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>target</q></b> attribute defines if I want to open the link to a different tab or the current tab. <br>
+                <br>
+                <b>2:</b> <b> <q>noopener</q> </b> prevents the site to take control of the user. and <b><q>noreferrer</q></b> prevents the site from knowing that I am using their link. <br>
+                Those two is used for security purpose. <br>
+                <br>
+                <b>3:</b> after mailto we can also add the contents and cc or bcc. We just need to add those after a <q>?</q> question mark. <br>
+                <br>
+                <b>4:</b> to open <b>telegram: tg</b>. to open <b>WhatsApp: whatsapp</b>. to open <b>Message app: sms</b>.
+            </td>
+        </tr>
+
+
+        <!-- list -->
+        <tr>
+            <td>
+                Ordered list: <br>
+                &lt;ol&gt; <br>
+                Unordered list: <br>
+                &lt;ul&gt; <br>
+            </td>
+            <td>
+                Ordered list: <br>
+                <span class="colorRed"> &lt;ol <sup>1</sup>type='a'&gt; </span> <br>
+                <span class="colorRed">&lt;li&gt;</span> Item 1 <span class="colorRed">&lt;/li&gt;</span> <br>
+                <span class="colorRed">&lt;li&gt;</span> Item 2 <span class="colorRed">&lt;/li&gt;</span> <br>
+                <span class="colorRed"> &lt;/ol&gt; </span>
+                <br> <br>
+                Unordered list: <br>
+                <span class="colorRed"> &lt;ul <span class="changeOnmyFun"></span>&gt;<sup>2</sup> </span> <br>
+                <span class="colorRed">&lt;li&gt;</span> Item 1 <span class="colorRed">&lt;/li&gt;</span> <br>
+                <span class="colorRed">&lt;li&gt;</span> Item 2 <span class="colorRed">&lt;/li&gt;</span> <br>
+                <span class="colorRed"> &lt;/ul&gt; </span>
+            </td>
+            <td>
+                Ordered list:
+                <ol type="a">
+                    <li> Item 1</li>
+                    <li> Item 2</li>
+                </ol>
+                Unordered list:
+                <ul class="changeOnmyFun1">
+                    <li> Item 1</li>
+                    <li> Item 2</li>
+                </ul>
+            </td>
+
+            <td> list, ordered, unordered, circle </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b>The default value of the type is "1" (1, 2, 3, ...)</b>. But if we specify the type then it will render like so. <br>
+                There are various types. like: <b>"A"</b> (A, B, C, ...), <b>"i"</b> (roman number i, ii, iii, iv, ...), <b><code>"I"</code></b> (roman number <code>I, II, III, IV, ...</code>). We can also style the type like lower-greek(α, β, γ, ...), Decimal-leading-zero(01, 02, 03, ...) or no sighn with css.
+                <br> <br>
+                <b>2:</b> We can also style the signs of unordered list by adding css. <span style="cursor: pointer; margin: 0; text-decoration: underline;" onclick="myFun()">Click here to see.</span> 
+                There are many styles like circle, square, disc;
+                <br>  <br>
+                <b>*** There is also a type of list called description list. ***</b>
+                it is written as <br> &lt;dl&gt; <br> &lt;dt&gt; Term name &lt;/dt&gt; <br>  &lt;dd&gt; Term description. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ad. &lt;/dd&gt; <br> &lt;/dl&gt;
+
+                <script>
+                    function myFun(){
+                        document.querySelector(".changeOnmyFun").innerText = 'style="list-style-type: circle; "';
+                        document.querySelector(".changeOnmyFun1").style.listStyleType = "circle"
+                    }
+                </script>
+            </td>
+        </tr>
+
+
+        <!-- Table -->
+        <tr>
+            <td>
+                Table tag: <br>
+                &lt;table&gt;
+            </td>
+            <td>
+                <span class="colorRed"> &lt;table&gt; </span> <br>
+                    <span class="colorRed"> &lt;caption&gt; </span> This is a Table <span class="colorRed"> &lt;/caption&gt; </span> <br>
+                    <span class="colorRed"> &lt;colgroup&gt; <sup>1</sup></span> <br>
+                        <span class="colorRed"> &lt;col span="1" style="width: 30%;" &gt; </span> <br>
+                        <span class="colorRed"> &lt;col span="1" style="width: 70%;" &gt; </span> <br>
+                    <span class="colorRed"> &lt;/colgroup&gt; </span> <br>
+                    <span class="colorRed"> &lt;thead&gt; </span> <br>
+                        <span class="colorRed"> &lt;tr&gt; </span> <br>
+                            <span class="colorRed"> &lt;th&gt; </span> Heading title 1 <span class="colorRed"> &lt;/th&gt; </span> <br>
+                            <span class="colorRed"> &lt;th&gt; </span> Heading title 2 <span class="colorRed"> &lt;/th&gt; </span> <br>
+                        <span class="colorRed"> &lt;/tr&gt; </span> <br>
+                    <span class="colorRed"> &lt;/thead&gt; </span> <br>
+                    <span class="colorRed"> &lt;tbody&gt; </span> <br>
+                        <span class="colorRed"> &lt;tr&gt; </span> <br>
+                            <span class="colorRed"> &lt;td&gt; </span> Table data 1 <span class="colorRed"> &lt;/td&gt; </span> <br>
+                            <span class="colorRed"> &lt;td&gt; </span> Table data 2 <span class="colorRed"> &lt;/td&gt; </span> <br>
+                        <span class="colorRed"> &lt;/tr&gt; </span> <br>
+                        <span class="colorRed"> &lt;tr&gt; </span> <br>
+                            <span class="colorRed"> &lt;td <sup>2</sup>colspan="2"&gt; </span> Table data 3 <span class="colorRed"> &lt;/td&gt; </span> <br>
+                        <span class="colorRed"> &lt;/tr&gt; </span> <br>
+                    <span class="colorRed"> &lt;/tbody&gt; </span> <br>
+                <span class="colorRed"> &lt;/table&gt; </span> <br>
+            </td>
+            <td>
+                <table>
+                    <caption> This is a Table </caption>
+                    <thead>
+                        <colgroup>
+                            <col span="1" style="width: 30%;" >
+                            <col span="1" style="width: 70%;" >
+                        </colgroup>
+                        <tr>
+                            <th> Heading title 1 </th>
+                            <th> Heading title 2 </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Table data 1 </td>
+                            <td> Table data 2 </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"> Table data 3 </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </td>
+
+            <td> table, thead, tbody, th, td, colspan, column width, style </td>
+        </tr>
+        
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>colgroup</q></b> doesn't show anything. It defines the columns behaviour.
+                the &lt;col&gt; tag defines the style of a column. If we set the span="2", then it will define the style of two columns.
+                <br> <br>
+                <b>2:</b> <b><q>colspan</q></b> attribute marge two or more cells. There is also <b><q>rowspan</q></b>.
+                <br> <br>
+                There is also a tag &lt;tfoot&gt;.
+            </td>
+        </tr>
+
+
+        <!-- image tag -->
+        <tr>
+            <td>
+                Image tag: <br>
+                &lt;img&gt; <br>
+            </td>
+            <td>
+                <span class="colorRed"> &lt;img src="image.png" alt="Nice Image" &gt; </span> <br>
+                &lt;!-- <b><q>alt</q></b> attribute is applied when the image source is not found or corrupted. --&gt;
+            </td>
+            <td>
+                <div style="width: 100%; height: 150px; overflow: hidden;">
+                    <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&w=600" alt="NiceImage" style="position: relative; top: -73px;">
+                </div>
+                <!-- <div style="width: 100%; height: 100px; font-size: 20px; background-color: rgb(20, 187, 187); color: rgb(65, 237, 243); display: flex; align-items: center; justify-content: center;"><b>This is a Nice Image</b></div> -->
+            </td>
+
+            <td> image, img, photo </td>
+        </tr>
+
+
+        <!-- figure tag -->
+        <tr>
+            <td>
+                figure tag: <br>
+                &lt;figure&gt; <br> <br>
+                figcaption: <br>
+                &lt;figcaption&gt; <br>
+            </td>
+            <td>
+                <span class="colorRed"> &lt;figure&gt; </span> <br>
+                    &lt;img src="image.png" alt="Nice Image" &gt; <br>
+                    <span class="colorRed"> &lt;figcaption&gt; </span>
+                        Nice Image 1.
+                    <span class="colorRed"> &lt;/figcaption&gt; </span> <br>
+                <span class="colorRed"> &lt;/figure&gt; </span>
+                <br>
+                &lt;!-- Notice that the <q>figure</q> tag bind the image and the caption. And it also set a margin around the whole area. --&gt;
+            </td>
+            <td>
+                <figure>
+                    <div style="width: 100%; height: 110px; overflow: hidden">
+                        <img src="https://images.pexels.com/photos/5740932/pexels-photo-5740932.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="NiceImage" width="100%">
+                    </div>
+                    <figcaption> Nice Image 1. </figcaption>
+                </figure>
+            </td>
+
+            <td> image, img, photo, figure, caption </td>
+        </tr>
+
+
+        <!-- picture tag -->
+        <tr>
+            <td>
+                Picture tag: <br>
+                &lt;picture&gt; <br> <br>
+                Source tag: <br>
+                &lt;source&gt; <br>
+            </td>
+            <td>
+                <span class="colorRed"> &lt;picture&gt; </span> <br>
+                    <span class="colorRed"> &lt;source <sup>1</sup>media="(min-width: 1200px)" <sup>2</sup>srcset="source1"&gt; </span> <br>
+                    <span class="colorRed"> &lt;source media="(min-width: 800px)" srcset="source2"&gt; </span> <br>
+                    <span class="colorRed"> &lt;img src="default source" alt="Nice Image"&gt; </span> <br>
+                <span class="colorRed"> &lt;/picture&gt; </span>
+            </td>
+            <td>
+                <div style="width: 100%; height: 150px; overflow:hidden">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <source media="(min-width:900px)" srcset="https://images.pexels.com/photos/2876511/pexels-photo-2876511.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <img  src="https://images.pexels.com/photos/3454270/pexels-photo-3454270.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nice Image" style="width:100%; position: relative; top: -60px;">
+                    </picture>
+                </div>
+
+
+            </td>
+
+            <td> picture, multiple sources, srcset, different device </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> The media is basically the media query. Inside <q> media='(min-width: somepx)' </q> the <b>min-width is the width of the screen</b>. In other words it is the width of the browser. <br>
+                <br>
+                <b>Change the browser size to see the change in picture tag.</b><br>
+                &lt;picture&gt; tag doesn't load all the images. It just load 1 image based on the criteria. And the &lt;img&gt; tag is the canvas of that image. So it is mandatory to add this.
+                <br> <br>
+                <b>2:</b> we can add multiple sources separated by a comma( , ) for 1 or more images inside the <q>srcset</q> attribute.
+            </td>
+        </tr>
+
+
+        <!-- map and area tag -->
+        <tr>
+            <td>
+                Map tag: <br>
+                &lt;map&gt; <br> <br>
+                Area tag: <br>
+                &lt;area&gt; <br>
+            </td>
+            <td>
+                &lt;img src="image source" alt="Nice Image" <span class="colorRed"> <sup>1</sup>usemap="#imageMap" </span> &gt; <br> <br>
+                
+                <b>
+                &lt;!-- Click on the white shapes to see the magic of the map and the area tag. --&gt;
+                </b>
+
+                <br> <br> <br>
+                <span class="colorRed"><sup>2</sup>&lt;map name="imageMap"&gt; </span> <br> 
+                    <br>
+                    <span class="colorRed"><sup>3</sup>&lt;area shape="rect"
+                    <br>
+                    coords="50, 80, 218, 250"
+                    <br>
+                    href="javascript:alert('...')"
+                    &gt;
+                    
+                    <br> <br>
+                    &lt;area shape="circle"
+                    <br>
+                    coords="296, 355, 63"
+                    <br>
+                    href="javascript:alert('...')"
+                    &gt;
+                    
+                    <br> <br>
+                    &lt;area shape="poly"
+                    <br>
+                    coords="100, 330, 210, 450, 80, 545, 90, 340"
+                    <br>
+                    href="javascript:alert('...')"
+                    &gt;
+
+                    </span> <br> <br>
+                <span class="colorRed"> &lt;/map&gt; </span> <br>
+            </td>
+            <td>
+
+                <img src="https://images.pexels.com/photos/7307618/pexels-photo-7307618.jpeg?auto=compress&cs=tinysrgb&w=1200" style="width: 100%; filter: contrast(200%); z-index: -40;" alt="Image" usemap="#imageMap">
+
+                <map name="imageMap">
+                    <area shape="rect" coords="50, 80, 213, 245" href="javascript:alert('You Clicked on the RECTANGLE')" alt="Area" >
+                    <area shape="circle" coords="288, 348, 60" href="javascript:alert('You Clicked on the white CIRCLE')" alt="Area" >
+                    <area shape="poly" coords="95, 320, 210, 435, 87, 530, 87, 330" href="javascript:alert('You Clicked on the TRIANGLE(polygon)')" alt="Area" >
+                </map>
+
+            </td>
+
+            <td> picture, image manupulation, click on image, area of image, shape </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>usemap</q></b> uses the map that we defined to create a clickable image area. The whole image is not gonna be clickable. But a certain area will work as clickable area.
+                <br> <br>
+                <b>2:</b> <b><q>&lt;map&gt;</q></b> tag is used to create an clickable area that will do something when we click on that area. <b>&lt;map&gt; tag must have a name that will be used in the &lt;img&gt; tag with usemap attribute.</b> Notice the #(hash) in front of the name in &lt;img&gt; tag.
+                <br> <br>
+                <b>3:</b> <b><q>&lt;area&gt;</q></b> tag is written inside the &lt;map&gt; tag. the area defines various types of area. Shuch as: <br>
+                
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div style="width: 350px; display: inline-block; flex: 1;">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px" viewBox="0 0 100 50" overflow="visible" xml:space="preserve">
+                        <rect x="6" y="13" fill="rgb(77 174 239)" width="25" height="25"/>
+                        <circle cx="6" cy="13" r="1.8" fill="rgb(45 60 67)" />
+                        <circle cx="31" cy="38" r="1.8" fill="rgb(45 60 67)" />
+                        <text transform="matrix(1 0 0 1 8 10)" font-family="'MyriadPro-Regular'" font-size="4.000px">(x1, y1)</text>
+                        <text transform="matrix(1 0 0 1 21 44)" font-family="'MyriadPro-Regular'" font-size="4.000px">(x2, y2)</text>
+                        <text transform="matrix(1 0 0 1 45 18)" font-family="'MyriadPro-Regular'" font-size="4.7px">shape=&quot;rect&quot;</text>
+                        <text transform="matrix(1 0 0 1 45 25)" font-family="'MyriadPro-Regular'" font-size="4.7px">coords=</text>
+                        <text transform="matrix(1 0 0 1 45 32)" font-family="'MyriadPro-Regular'" font-size="4.7px">&quot;x1, y1, x2, y2&quot;</text>
+                        </svg>
+                    </div>
+    
+                    <div style="width: 350px; display: inline-block; flex: 1;">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px" viewBox="0 0 100 50" overflow="visible" xml:space="preserve">
+                        <g>
+                            <path fill="rgb(77 174 239)" d="M21.6,41.4c-9.1,0-16.4-7.4-16.4-16.4c0-9.1,7.4-16.4,16.4-16.4C30.6,8.6,38,15.9,38,25
+                                C38,34.1,30.6,41.4,21.6,41.4z"/>
+                            <g>
+                                <path fill="rgb(77 174 239)" d="M21.6,9.1c8.8,0,15.9,7.1,15.9,15.9c0,8.8-7.1,15.9-15.9,15.9c-8.8,0-15.9-7.1-15.9-15.9
+                                    C5.7,16.2,12.8,9.1,21.6,9.1 M21.6,8.1L21.6,8.1C12.2,8.1,4.7,15.6,4.7,25v0c0,9.4,7.6,16.9,16.9,16.9h0c9.4,0,16.9-7.6,16.9-16.9
+                                    v0C38.5,15.6,30.9,8.1,21.6,8.1L21.6,8.1z"/>
+                            </g>
+                        </g>
+                        <circle cx="21.6" cy="25" r="2.1" fill="rgb(45 60 67)"/>
+                        <text fill="#fff" transform="matrix(1 0 0 1 21.7822 31.9863)" font-family="'MyriadPro-Regular'" font-size="4.4855px">(x1, y1)</text>
+                        <text fill="#fff" transform="matrix(1 0 0 1 10.7808 22.6201)" font-family="'MyriadPro-Regular'" font-size="5.5204px">r</text>
+                        <text transform="matrix(1 0 0 1 45 18)" font-family="'MyriadPro-Regular'" font-size="4.7px">shape=&quot;circle&quot;</text>
+                        <text transform="matrix(1 0 0 1 45 25)" font-family="'MyriadPro-Regular'" font-size="4.7px">coords=</text>
+                        <text transform="matrix(1 0 0 1 45 32)" font-family="'MyriadPro-Regular'" font-size="4.7px">&quot;x1, y1, r&quot;</text>
+                        <line fill="none" stroke="rgb(45 60 67)" stroke-miterlimit="10" x1="21.6" y1="25" x2="4.7" y2="25"/>
+                        </svg>
+                    </div>
+    
+                    <div style="width: 400px; display: inline-block; flex: 1;">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px" viewBox="0 0 150 50" overflow="visible" xml:space="preserve">
+                        <rect x="25.4" y="9.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.1234 35.1535)" fill="rgb(77 174 239)" width="29" height="29"/>
+                        <circle cx="39.9" cy="3" r="2.3" fill="rgb(45 60 67)" />
+                        <circle cx="61" cy="23.3" r="2.3" fill="rgb(45 60 67)" />
+                        <circle cx="39.9" cy="44" r="2.3" fill="rgb(45 60 67)" />
+                        <circle cx="19" cy="23.8" r="2.3" fill="rgb(45 60 67)" />
+                        <text transform="matrix(1 0 0 1 44.1079 5.9467)" font-family="'ArialMT'" font-size="5.8676px">(x1, y1)</text>
+                        <text transform="matrix(1 0 0 1 56.5033 31.2065)" font-family="'ArialMT'" font-size="5.8676px">(x2, y2)</text>
+                        <text transform="matrix(1 0 0 1 17.0931 46.6971)" font-family="'ArialMT'" font-size="5.8676px">(x3, y3)</text>
+                        <text transform="matrix(1 0 0 1 3.7653 18)" font-family="'ArialMT'" font-size="5.8676px">(x4, y4)</text>
+                        <text transform="matrix(1 0 0 1 85 12)" font-family="'MyriadPro-Regular'" font-size="6.8px">shape=&quot;poly&quot;</text>
+                        <text transform="matrix(1 0 0 1 85 22)" font-family="'MyriadPro-Regular'" font-size="6.8px">coords=&quot;</text>
+                        <text transform="matrix(1 0 0 1 85 32)" font-family="'MyriadPro-Regular'" font-size="6.8px">x1, y1, x2, y2, </text>
+                        <text transform="matrix(1 0 0 1 85 42)" font-family="'MyriadPro-Regular'" font-size="6.8px">x3, y3, x4, y4&quot;</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <b><q> shape=&quot;poly&quot; </q></b> doesn't mean only 4 points. It can have as many points as we want.
+
+                <br> <br>
+                Talking about image. There is a tag called <b>&lt;svg&gt;. It is mainly from XML.</b> It is very useful to show high quality drawings. It is vector scalable. It is written as: <br>
+                &lt;svg version=".." &gt; <br> &lt;rect x=".." y=".." fill="..." width=".." height=".." /&gt; <br> &lt;circle cx=".." cy=".." r=".." fill="..." /&gt; <br> &lt;/svg&gt;
+                <br>
+                There is also a tag called &lt;canvas&gt;. It is used to draw anything on the fly via javascript.
+
+
+            </td>
+        </tr>
+
+
+        <!-- Audio ans Video -->
+        <tr>
+            <td>
+                Audio: <br>
+                &lt;audio&gt; <br> <br>
+                Video: <br>
+                &lt;video&gt;
+
+            </td>
+            <td>
+                <span class="colorRed">
+                    &lt;audio <sup>1</sup>controls&gt; <br>
+                    &lt;source src="audio source"&gt; <br>
+                    &lt;/audio&gt;
+                </span> <br>
+                &lt;!-- There can be multiple sources. --&gt;
+                <br> <br>
+                <span class="colorRed">
+                    &lt;video controls autoplay&gt; <br>
+                    &lt;source src="audio source"&gt; <br>
+                    &lt;/video&gt; <br>
+                </span>
+            </td>
+            <td style="text-align: center">
+                <audio src="https://www.w3schools.com/TAGS/horse.ogg" controls>
+                    <source src="https://pixabay.com/music/beats-abstract-style-121455/">
+                </audio>
+                <br> <br>
+                <video controls autoplay width="100%">
+                    <source src="https://player.vimeo.com/external/384761655.sd.mp4?s=383ab4dbc773cd0d5ece3af208d8f963368f67e4&profile_id=164&oauth2_token_id=57447761">
+                    <source src="https://player.vimeo.com/external/406495486.sd.mp4?s=8aae79521f2e55df1e45faef0b0c2f9c2cfa9fed&profile_id=164&oauth2_token_id=57447761">
+                    <source src="https://player.vimeo.com/external/417019904.sd.mp4?s=27c834f8a15f7733c2371db3c4f2cc5eff84b98f&profile_id=164&oauth2_token_id=57447761">
+                </video>
+            </td>
+
+            <td> iaudio, video, control video </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>controls</q></b> attribute specify if the audio controls like volume or play button should be desplayed or not. <br>
+                There are many attributes for video and audio. Like <b>autoplay</b> to play audio and video immidiately after the web page loads. there is also <b>loop</b> to loop the audio or video. There is also <b>muted</b> and <b>poster</b>(just for video)
+            </td>
+        </tr>
+
+
+
+        <!-- iframe tag -->
+        <tr>
+            <td>
+                Iframe tag: <br>
+                &lt;iframe&gt;
+
+            </td>
+            <td>
+                <span class="colorRed">
+                    &lt; iframe src="webpage source" frameborder="1"&gt; 
+                    &lt;/iframe&gt; <br>
+                </span>
+                &lt;!-- <b>iframe</b> is used to show other webpages within our web pages. and the <b>src</b> (source) is the link of the page --&gt; <br>
+            </td>
+            <td style="text-align: center">
+                <iframe src="https://mahadirazib.github.io/Similar-Word-finder/" frameborder="1" width="100%"></iframe>
+            </td>
+
+            <td> iframe, show other webpase, other Website </td>
+        </tr>
+
+
+
+        <!-- Form element -->
+        <tr>
+            <td>
+                Form: <br>
+                &lt;form&gt; <br>
+            </td>
+            <td>
+                <span class="colorRed"> &lt;form <sup>1</sup>action="..." <sup>2</sup>method="post" <sup>3</sup>oninput="..." <sup>4</sup>onsubmit="..."&gt; </span> <br>
+                <br>
+                <span class="colorRed"> &lt;/form&gt; </span> <br>
+            </td>
+            <td>
+                <form>
+
+                </form>
+            </td>
+
+            <td> form tag, </td>
+        </tr>
+        
+        <tr>
+            <td colspan="4">
+                <b>The form tag doesn't show anything. It helps the browser to send the data to the server. We will learn more about them later.</b>
+                <br> <br>
+                <b>1:</b> <b><q>action</q></b> attribute specify the file path where the inputs will be send. like action="some/action.php"
+
+                <br> <br>
+                <b>2:</b> <b><q>method</q></b> attribute specify the methode of reciving and sending data. We will learn more about them later.
+
+                <br> <br>
+                <b>3:</b> <b><q>oninput</q></b> change something based on input.
+                
+                <br> <br>
+                <b>4:</b> <b><q>onsubmit</q></b> change something based on form submit.
+
+            </td>
+        </tr>
+
+
+        <!-- input tag -->
+        <tr>
+            <td>
+                Input tag: <br>
+                &lt;input&gt; <br>
+                Label tag: <br>
+                &lt;label&gt; <br>
+            </td>
+            <td>
+                &lt;form&gt; <br> <br>
+                <span class="colorRed"> &lt; <sup>1</sup>label <sup>*</sup>for="inputText"&gt;Enter Name: &lt;/label&gt;</span> <br>
+                <span class="colorRed"> &lt;input <sup>2</sup>type="text" <sup>3</sup>name="inputText" <sup>*</sup>id="inputText" <sup>4</sup>required&gt; </span> 
+                <br>&lt;br&gt; <br>
+                <span class="colorRed"> &lt;input type="submit"&gt; </span> 
+                <br> <br>
+                &lt;/form&gt;
+
+            </td>
+            <td>
+                <form>
+                    <label for="inputText">Enter Name: </label>
+                    <input type="text" id="inputText" required> 
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </td>
+
+            <td> input, type, for, label, submit, checkbox, radio, date, file </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> <b><q>&lt;label&gt;</q></b> tag is used to make a group with the input.
+                <br> <br>
+                
+                <b>***</b> <b><q>for</q></b> attribute works with <b><q>id</q></b> attribute. If we don't give the input tag an id then the label will not work properly for the input.
+                <br> <br>
+                
+                <b>2:</b> There are many <b><q>type</q></b> Like:
+                <br> <br>
+                
+                <fieldset>
+                    <legend>Email</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Number</legend>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" max="5">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Password</legend>
+                    <label for="pwd">Pass:</label>
+                    <input type="password" id="pwd">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Checkbox</legend>
+                    <input type="checkbox" id="check1">
+                    <label for="check1"> Checkbox</label> <br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Radio</legend>
+                    <input type="radio" id="radio">
+                    <label for="radio">Radio Selection</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Button</legend>
+                    <input type="button" value="CLick me" onclick="javascript:alert('You clicked the button')">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Color</legend>
+                    <label for="color">Select color:</label>
+                    <input type="color" id="color" value="#64b8ff" style="background-color: #387af5; border-width: 0; border-radius: 2px;">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Date</legend>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" >
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Datetime-local</legend>
+                    <label for="birthdaytime">Date and time:</label>
+                    <input type="datetime-local" id="birthdaytime" >
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Range</legend>
+                    <label for="vol">Volume:</label>
+                    <input type="range" id="vol" >
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Reset</legend>
+                    <input type="reset" value="Reset form">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>File</legend>
+                    <input type="file" multiple>
+                    <p style="margin: 0; padding: 0">There is some attribute specific for file. like <b>accept</b> (to specify if a file format is accepted or not) or <b>multiple</b></p>
+                </fieldset>
+                
+
+                <br> <br>
+                
+                <b>3:</b> The name attribute is used to reference elements in a JavaScript, or to reference form-data after a form is submitted. <br>
+                <b>Only form elements with a name (not just input element) attribute will have their values passed when submitting a form.</b>
+                
+                <br> <br>
+                <b>4:</b> Click the submit button to see the work of <b><q>required</q></b> attribute.
+                There are many attributes for input tag. like <b>value</b>. <input type="text" value="Pre-defined value" style="width: 120px;"> It can be used in most of the input type.
+                There is <b>min</b> and <b>max</b>. this two can be used in range, number etc.
+                There is <b>autocomplete</b>. It is to define if the saved data(in browser or computer) should be used or not.
+                There is <b>checked</b> for input type checkbox and radio.
+                There is <b>form</b> to specify(by id) a form element outside the form tag.
+                There is <b>placeholder</b>. it is shown as background text. like: <input type="text" placeholder="Placeholder" style="width: 120px;"> |
+                There is <b>disabled</b>: <input type="text" disabled style="width: 100px;">
+                Those are the important ones. There is also some attributes. like formmethode and formaction for input type submit.
+                
+            </td>
+        </tr>
+
+
+        <!-- textarea tag -->
+        <tr>
+            <td>
+                Textarea: <br>
+                &lt;textarea&gt;
+
+            </td>
+            <td>
+                &lt;form&gt; <br>
+                &lt;label for="txtarea"&gt;Leave a commnet: &lt;/label&gt; &lt;br&gt; <br>
+                <span class="colorRed">&lt;textarea id="txtarea" rows="4" cols="50"&gt; </span> 
+                <br> This Cheat sheet is really helpfull <br>
+                <span class="colorRed">&lt;/textarea&gt; </span> 
+                <br>
+                &lt;/form&gt;
+
+            </td>
+            <td>
+                <label for="txtarea">Leave a commnet: </label> <br>
+                <textarea id="txtarea" rows="4" cols="50">This Cheat sheet is really helpful.</textarea>
+            </td>
+
+            <td> textarea, text field </td>
+        </tr>
+
+        
+        <!-- fieldset and legend tag -->
+        <tr>
+            <td>
+                Fieldset: <br>
+                &lt;fieldset&gt;
+                <br> <br>
+                Legend: <br>
+                &lt;legend&gt;
+
+            </td>
+            <td>
+                &lt;form&gt; <br>
+                <span class="colorRed">&lt;fieldset&gt; </span>  <br>
+                    &lt;input type="text"&gt;
+                    &lt;label for="text1"&gt;Place your name:&lt;/label&gt;
+                    &lt;input type="submit"&gt; <br>
+                <span class="colorRed">&lt;/fieldset&gt; </span>  <br> <br>
+                <span class="colorRed">&lt;fieldset&gt; </span>  <br>
+                <span class="colorRed">&lt;legend&gt; </span> This is from legend <span class="colorRed">&lt;/legend&gt; </span>  <br>
+                &lt;input type="text"&gt;
+                &lt;label for="text1"&gt;Place your name:&lt;/label&gt;
+                &lt;input type="submit"&gt; <br>
+                <span class="colorRed">&lt;/fieldset&gt; </span> 
+                <br>
+                &lt;/form&gt;
+
+            </td>
+            <td>
+                <fieldset style="border: 2px groove rgb(192, 192, 192);">
+                    <br>
+                    <label for="text1">Place your name:</label>
+                    <input type="text" id="text1"> <br> <br>
+                    <input type="submit">
+                </fieldset>
+
+                <br> <br>
+                <fieldset style="border: 2px groove rgb(192, 192, 192);">
+                    <br>
+                    <legend> This is from legend </legend>
+                    <label for="text2">Place your Name:</label>
+                    <input type="text" id="text2"> <br> <br>
+                    <input type="submit">
+                </fieldset>
+            </td>
+
+            <td> fieldset, legend, wrap input, make divission input, partitioning </td>
+        </tr>
+
+
+        <!-- button tag  -->
+        <tr>
+            <td>
+                Button tag: <br>
+                &lt;button&gt;
+
+            </td>
+            <td>
+                <span class="colorRed">
+                    &lt;button <sup>1</sup>onclick="handlebtn()"&gt; <br>
+                    Click me <br>
+                    &lt;/button&gt;
+                </span>
+            </td>
+            <td>
+                <button onclick="handlebtn()">Click me</button>
+                <script>
+                    function handlebtn(){
+                        alert("You clicked on the button")
+                    }
+                </script>
+            </td>
+
+            <td> button </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> the attribute <b><q>onclick</q></b> is used to do something when we click on the button. The value of the onclick is basically a javascript function that we wrote. Click on the button to see it in action.
+            </td>
+        </tr>
+
+
+        <!-- Dropdown or select tag -->
+        <tr>
+            <td>
+                Select tag: <br>
+                &lt;select&gt;
+                <br> <br>
+                Option Group: 
+                &lt;optgroup&gt;
+                <br> <br>
+                Option: 
+                &lt;option&gt;
+
+            </td>
+            <td>
+                &lt;!-- Click on the Select option. --&gt; <br>
+                <span class="colorRed">
+                    &lt; <sup>1</sup>select&gt; <br>
+                        &lt; <sup>2</sup>optgroup label="Top 2"&gt; <br>
+                            <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                            &lt; <sup>3</sup>option <sup>4</sup>value="1"&gt;First&lt;/option&gt; <br>
+                            <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                            &lt;option value="2"&gt;Second&lt;/option&gt; <br>
+                        &lt;/optgroup&gt; <br> <br>
+                        &lt;optgroup label="Others"&gt; <br>
+                            <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                            &lt;option value="3"&gt;Third&lt;/option&gt; <br>
+                            <p style="width: 20px; display:inline-block; margin: 0;"> </p>
+                            &lt;option value="4"&gt;Fourth&lt;/option&gt; <br>
+                        &lt;/optgroup&gt; <br> <br>
+                    &lt;/select&gt;
+                </span>
+            </td>
+            <td style="text-align: center">
+                <select style="width: 150px;">
+                    <optgroup label="Top 2">
+                        <option>First</option>
+                        <option>Second</option>
+                    </optgroup>
+                    
+                    <optgroup label="Others">
+                        <option>Third</option>
+                        <option>Fourth</option>
+                    </optgroup>
+                </select>
+                
+            </td>
+
+            <td> Dropdown, opt, option, option group, select </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> &lt;select&gt; tag just make a dropdown. Other tags like &lt;option&gt; make rest of the content.
+                <br> <br>
+                <b>2:</b> <b><q>&lt;optgroup&gt;</q></b> make a group of options. and the <b><q>label attribute</q></b> name the group. To see the whole picture click the options above.
+                <br> <br>
+                <b>3:</b> <b><q>&lt;option&gt;</q></b> tag make a option of the dropdown.
+                <br> <br>
+                <b>4:</b> <b><q>value</q></b> attribute doesn't show anything on the page. But it will be sent to the back-end to do further calculation.
+            </td>
+        </tr>
+
+
+        <!-- Datalist tag -->
+        <tr>
+            <td>
+                Datalist tag: <br>
+                &lt;datalist&gt;
+
+            </td>
+            <td>
+                <span class="colorRed">
+                    &lt;input <sup>1</sup>list="opinion"&gt; <br>
+                    &lt;datalist id="opinion"&gt; <br>
+                    &lt;option value=" <span style="color: black;">This is awesome"</span>&gt; <br>
+                    &lt;option value= <span style="color: black;">"This is super awesome"</span>&gt; <br>
+                    &lt;/datalist&gt; <br>
+                </span>
+            </td>
+            <td style="text-align: center">
+                <input list="opinion">
+                <datalist id="opinion">
+                    <option value="This is awesome">
+                    <option value="This is super awesome">
+                </datalist>
+            </td>
+
+            <td> Dropdown, opt, option, option group, pre defined value </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <b>1:</b> We need to specify the list inside the &lt;input&gt; tag. <b>The datalist itself doesn't do anything. it is just pre defined value. But we can put anything inside the input. </b>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+
+
+
+        </tbody>
+
+
+    </table>
+    
+</body>
+</html>
